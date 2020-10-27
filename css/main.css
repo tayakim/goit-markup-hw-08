@@ -526,10 +526,6 @@ body {
   color: #FFFFFF;
 }
 
-.pages {
-  display: none;
-}
-
 @media screen and (min-width: 1200px) {
   .pages {
     font-size: 14px;
@@ -577,11 +573,6 @@ body {
 
 .current::after {
   color: #2196F3;
-}
-
-.pages,
-.contacts-header {
-  display: none;
 }
 
 @media screen and (min-width: 1200px) {
