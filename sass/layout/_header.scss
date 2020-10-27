@@ -2,9 +2,8 @@
     &__logo {
         width: 134px;
         margin-top: 16px;
-        margin-left: 15px;
         margin-bottom: 16px;
-        margin-right: 334px;
+        margin-right: 276px;
         color: $font-black;
         font-family: Raleway;
         font-weight: 700;
@@ -24,7 +23,7 @@
 }
 
 .pages {
-    // display: none;
+    display: none;
     @media screen and (min-width: 1200px) {
         font-size: 14px;
         line-height: 1.14;
@@ -76,7 +75,7 @@
 
 .pages,
 .contacts-header {
-    // display: none;
+    display: none;
     @media screen and (min-width: 1200px) {
         font-size: 14px;
         line-height: 1.14;

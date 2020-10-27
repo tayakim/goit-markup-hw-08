@@ -14,9 +14,16 @@ body {
 }
 
 .flexin {
+  margin: 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .flexin {
+    height: 80px;
+  }
 }
 
 .menu-class {
@@ -501,9 +508,8 @@ body {
 .site-nav__logo {
   width: 134px;
   margin-top: 16px;
-  margin-left: 15px;
   margin-bottom: 16px;
-  margin-right: 334px;
+  margin-right: 276px;
   color: #212121;
   font-family: Raleway;
   font-weight: 700;
@@ -524,6 +530,10 @@ body {
 
 .site-nav__accent-second {
   color: #FFFFFF;
+}
+
+.pages {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
@@ -573,6 +583,11 @@ body {
 
 .current::after {
   color: #2196F3;
+}
+
+.pages,
+.contacts-header {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
