@@ -22,9 +22,15 @@
 }
 
 .menu-container {
-    height: 400px;
-    background-color: palegoldenrod;
-    padding: 20px;
+    display: none;
+    position: absolute;
+    width: 480px;
+    height: 453px;
+    left: 0px;
+    top: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    // padding: 20px;
     text-align: center;
     font-size: 14px;
     @media screen and (min-width: 768px) {
@@ -39,16 +45,79 @@
     }
 }
 
-.navigation,
-.kontakte {
-    width: 40px;
-    height: 50px;
-}
-
 .navigation {
-    outline: 1px solid black;
+    position: absolute;
+    width: 99px;
+    height: 155px;
+    left: 191px;
+    top: 120px;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    &__link {
+        display: block;
+        position: relative;
+        // // padding-top: 32px;
+        // padding-bottom: 8px;
+        color: $font-black;
+        text-decoration: none;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: $blue-color;
+        }
+    }
+    & .current {
+        color: $blue-color;
+        &::after {
+            position: relative;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            background: #2196F3;
+            position: absolute;
+            border-radius: 2px;
+            margin-top: 8px;
+            // bottom: 0;
+            left: 0;
+        }
+    }
 }
 
 .kontakte {
+    position: absolute;
+    width: 178px;
+    height: 21px;
     outline: 1px solid red;
+    flex-direction: column;
+    margin-left: auto;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    align-items: baseline;
+    // &__item:not(:last-child) {
+    //     margin-right: 50px;
+    // }
+    &__envelope svg {
+        width: 16px;
+        height: 12px;
+        fill: #757575;
+    }
+    &__phone svg {
+        width: 10px;
+        height: 16px;
+        margin-left: 0px;
+        fill: #757575;
+    }
+    &__envelope:hover svg {
+        fill: $blue-color;
+    }
+    &__phone:hover svg {
+        fill: $blue-color;
+    }
+}
+
+.navigation-pages__item {
+    margin-bottom: 40px;
 }

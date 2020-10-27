@@ -27,10 +27,38 @@
                             <use class="icon-menu" href="./images/sprite.svg#menu"></use>
                         </svg>
                     </button>
+
                 <!-- aria-expanded="false"  -->
                 <div class="menu-container" id="menu-container" data-menu>
-                    <div class="navigation"></div>
-                    <div class="kontakte"></div>
+                    <div class="navigation">
+                        <ul class="list navigation__pages">
+                            <li class="navigation-pages__item"><a href="/" class="navigation__link current">Студия</a></li>
+                            <li class="navigation-pages__item"><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
+                            <li class="navigation-pages__item"><a href="" class="navigation__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="kontakte">
+                        <ul class="list contacts-header ">
+                            <li class="contacts-header__item contacts-header__envelope">
+
+                                <a href="mailto:info@devstudio.com" class="contacts-now ">
+                                    <svg class="contacts-now__svg">
+                            <use href="./images/sprite.svg#envelope"></use>
+                        </svg> info@devstudio.com
+                                </a>
+
+                            </li>
+
+                            <li class="contacts-header__item  contacts-header__phone">
+
+                                <a href="tel:+380961111111" class="contacts-now ">
+                                    <svg class="contacts-now__svg">
+                            <use href="./images/sprite.svg#phone"></use>
+                        </svg> +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <ul class="list pages">

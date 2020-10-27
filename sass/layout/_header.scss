@@ -73,6 +73,12 @@
     }
 }
 
+.navigation__pages {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
 .contacts-first__item {
     font-weight: 500;
     position: relative;
