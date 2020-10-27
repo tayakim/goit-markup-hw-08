@@ -527,6 +527,8 @@ body {
 @media screen and (min-width: 1200px) {
   .site-nav__logo {
     margin-right: 93px;
+    margin-top: 24px;
+    margin-bottom: 25px;
   }
 }
 
@@ -613,10 +615,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .contacts-header {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    display: flex;
     flex-direction: column;
     margin-left: auto;
     align-items: baseline;
@@ -646,6 +644,7 @@ body {
 @media screen and (min-width: 1200px) {
   .contacts-header {
     font-size: 14px;
+    flex-direction: row;
     line-height: 1.14;
     letter-spacing: 0.02em;
     display: flex;
@@ -674,7 +673,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .contacts-now {
     font-weight: 500;
     color: #757575;

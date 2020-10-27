@@ -9,6 +9,9 @@
         }
         @media screen and (min-width: 1200px) {
             margin-right: 93px;
+            // margin-left: 215px;
+            margin-top: 24px;
+            margin-bottom: 25px;
         }
         color: $font-black;
         font-family: Raleway;
@@ -92,10 +95,6 @@
 
 .contacts-header {
     @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        display: flex;
         flex-direction: column;
         margin-left: auto;
         align-items: baseline;
@@ -122,6 +121,7 @@
     }
     @media screen and (min-width:1200px) {
         font-size: 14px;
+        flex-direction: row;
         line-height: 1.14;
         letter-spacing: 0.02em;
         display: flex;
@@ -151,7 +151,7 @@
 }
 
 .contacts-now {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         font-weight: 500;
         color: $font-grey;
         text-decoration: none;
