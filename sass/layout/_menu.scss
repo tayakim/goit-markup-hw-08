@@ -22,7 +22,7 @@
 }
 
 .menu-container {
-    display: none;
+    // display: none;
     position: absolute;
     width: 480px;
     height: 453px;
@@ -87,27 +87,38 @@
 }
 
 .kontakte {
-    position: absolute;
+    padding-top: 60px;
+}
+
+.kontakte-header {
+    // position: absolute;
     width: 178px;
     height: 21px;
-    outline: 1px solid red;
     flex-direction: column;
     margin-left: auto;
-    margin-top: 21px;
-    margin-bottom: 21px;
-    align-items: baseline;
+    margin-right: auto;
+    margin-top: 275px;
+    // margin-bottom: 21px;
     // &__item:not(:last-child) {
     //     margin-right: 50px;
     // }
+    &__item {
+        margin-bottom: 16px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
     &__envelope svg {
         width: 16px;
         height: 12px;
+        margin-right: 10px;
         fill: #757575;
     }
     &__phone svg {
         width: 10px;
-        height: 16px;
+        height: 15px;
         margin-left: 0px;
+        margin-right: 10px;
         fill: #757575;
     }
     &__envelope:hover svg {
@@ -118,6 +129,19 @@
     }
 }
 
+.kontakte-now {
+    font-weight: 500;
+    color: $font-grey;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        color: $blue-color;
+    }
+}
+
 .navigation-pages__item {
     margin-bottom: 40px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
 }
