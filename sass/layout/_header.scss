@@ -4,6 +4,12 @@
         margin-top: 16px;
         margin-bottom: 16px;
         margin-right: 276px;
+        @media screen and (min-width: 768px) {
+            margin-right: 88px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+        }
         color: $font-black;
         font-family: Raleway;
         font-weight: 700;
@@ -24,12 +30,12 @@
 
 .pages {
     display: none;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         display: flex;
-        margin-left: 93px;
+        // margin-left: 93px;
         font-weight: 500;
         &__item:not(:last-child) {
             margin-right: 50px;
@@ -76,7 +82,8 @@
 .pages,
 .contacts-header {
     display: none;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
+        display: flex;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
@@ -85,6 +92,35 @@
 
 .contacts-header {
     @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        align-items: baseline;
+        &__item:not(:last-child) {
+            margin-right: 50px;
+        }
+        &__envelope svg {
+            width: 16px;
+            height: 12px;
+            fill: #757575;
+        }
+        &__phone svg {
+            width: 10px;
+            height: 16px;
+            margin-left: 0px;
+            fill: #757575;
+        }
+        &__envelope:hover svg {
+            fill: $blue-color;
+        }
+        &__phone:hover svg {
+            fill: $blue-color;
+        }
+    }
+    @media screen and (min-width:1200px) {
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;

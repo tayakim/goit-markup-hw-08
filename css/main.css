@@ -518,6 +518,18 @@ body {
   font-size: 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .site-nav__logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav__logo {
+    margin-right: 93px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .site-nav__logo {
     font-size: 26px;
@@ -536,13 +548,12 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .pages {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     display: flex;
-    margin-left: 93px;
     font-weight: 500;
   }
   .pages__item:not(:last-child) {
@@ -590,9 +601,10 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .pages,
   .contacts-header {
+    display: flex;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -600,6 +612,38 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .contacts-header {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    align-items: baseline;
+  }
+  .contacts-header__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .contacts-header__envelope svg {
+    width: 16px;
+    height: 12px;
+    fill: #757575;
+  }
+  .contacts-header__phone svg {
+    width: 10px;
+    height: 16px;
+    margin-left: 0px;
+    fill: #757575;
+  }
+  .contacts-header__envelope:hover svg {
+    fill: #2196F3;
+  }
+  .contacts-header__phone:hover svg {
+    fill: #2196F3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .contacts-header {
     font-size: 14px;
     line-height: 1.14;
@@ -1536,13 +1580,14 @@ body {
 }
 
 .menu-container {
+  height: 400px;
   background-color: palegoldenrod;
   padding: 20px;
   text-align: center;
   font-size: 14px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-container {
     display: none;
     position: absolute;
@@ -1552,12 +1597,6 @@ body {
   }
   .menu-container.is-open {
     display: block;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .menu-container {
-    display: flex;
   }
 }
 
