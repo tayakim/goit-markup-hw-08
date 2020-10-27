@@ -1,0 +1,57 @@
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-button .icon-close {
+    display: none;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.menu-button.is-open .icon-close {
+    display: block;
+}
+
+.menu-container {
+    // height: 400px;
+    background-color: palegoldenrod;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    @media screen and (max-width: 767px) {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        &.is-open {
+            display: block;
+        }
+    }
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
+}
+
+.navigation,
+.kontakte {
+    width: 40px;
+    height: 50px;
+}
+
+.navigation {
+    outline: 1px solid black;
+}
+
+.kontakte {
+    outline: 1px solid red;
+}

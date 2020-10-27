@@ -1,0 +1,58 @@
+.hero {
+    background-position: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_mob.jpg");
+    @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        .box {
+            background-image: url("../images/header_mob@2x.jpg");
+        }
+    }
+    @media screen and (min-width:768px) {
+        background-image: url("../images/header_tab.jpg");
+    }
+    @media screen and (min-width:1200px) {
+        background-image: url("../images/header.jpg");
+    }
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    display: flex;
+    margin-bottom: 60px;
+    @media screen and (min-width:1200px) {
+        margin-bottom: 94px;
+    }
+    text-align: center;
+    letter-spacing: 0.06em;
+    &__button {
+        display: flex;
+        display: inline-block;
+        padding: 10px 32px;
+        margin-bottom: 118px;
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 200px;
+        }
+        align-items: center;
+        text-align: center;
+        border-radius: 4px;
+        color: $font-white;
+        background-color: $blue-color;
+        font-family: inherit;
+        font-size: 16px;
+        line-height: 1.8;
+        border: 1px solid transparent;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+    }
+    &__title {
+        margin-top: 118px;
+        font-size: 26px;
+        @media screen and (min-width: 1200px) {
+            margin-top: 200px;
+            font-size: 44px;
+        }
+        margin-bottom: 30px;
+        color: $font-white;
+        font-weight: 900;
+        line-height: 1.36;
+        text-transform: uppercase;
+    }
+}

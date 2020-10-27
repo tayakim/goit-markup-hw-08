@@ -1,0 +1,83 @@
+.features {
+    padding-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
+    &__title {
+        margin-top: 0;
+        text-align: center;
+    }
+    &__container {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+    }
+    &__card {
+        margin-bottom: 30px;
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+            &:not(:nth-child(2n)) {
+                margin-right: 30px;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 90px) / 4);
+            margin-bottom: 0;
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+        &::before {
+            display: block;
+            content: "";
+            height: 120px;
+            background: #F5F4FA;
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+    }
+    &__subtitle {
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            text-align: left;
+        }
+        margin-bottom: 10px;
+        margin-top: 0;
+        color: $font-black;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
+    &__description {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: $font-grey;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
+
+.icon-first::before {
+    background-image: url("../images/svg/antenna.svg");
+}
+
+.icon-second::before {
+    background-image: url("../images/svg/clock.svg");
+}
+
+.icon-third::before {
+    background-image: url("../images/svg/diagram.svg");
+}
+
+.icon-fourth::before {
+    background-image: url("../images/svg/astronaut.svg");
+}

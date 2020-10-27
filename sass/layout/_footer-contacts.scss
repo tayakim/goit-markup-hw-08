@@ -1,0 +1,124 @@
+.contacts-footer {
+    background-color: $background-footer;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+    }
+    &__left {
+        width: 231px;
+        margin: auto;
+        text-align: center;
+        // @media screen and (min-width: 768px) {
+        // }
+        @media screen and (min-width: 768px) {
+            margin: auto;
+            margin-bottom: 60px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-left: 0;
+            text-align: left;
+        }
+    }
+    &__center {
+        text-align: center;
+        margin-top: 60px;
+        @media screen and (min-width: 768px) {
+            margin: auto;
+            margin-top: 5px;
+        }
+        @media screen and (min-width:1200px) {
+            text-align: left;
+            margin-top: 12px;
+        }
+    }
+    &__right {
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            margin: auto;
+        }
+        @media screen and (min-width:1200px) {
+            margin-top: 12px;
+        }
+    }
+}
+
+.contacts {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    &__city,
+    &__email {
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+    &__phone {
+        margin-top: 0;
+    }
+    &__address {
+        color: $font-white;
+    }
+    &__email,
+    &__phone {
+        color: $font-grey;
+        text-decoration: none;
+    }
+}
+
+.no-margin {
+    margin-top: 20px;
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+    }
+}
+
+.general {
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.follow {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    &__text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $font-white;
+    }
+    &__social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        & svg {
+            width: 20px;
+            height: 20px;
+        }
+        &:hover {
+            background-color: $blue-color;
+        }
+    }
+    &__item {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,61 @@
+.clients {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__title {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+}
+
+.clients__card {
+    height: 90px;
+    margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+        width: calc((100% - 30px) / 2);
+        &:not(:nth-child(2n)) {
+            margin-right: 30px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 3);
+        &:not(:nth-child(3n)) {
+            margin-right: 30px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px) / 6);
+        margin-bottom: 0px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        border-color: $blue-color;
+    }
+    &:hover svg {
+        fill: $blue-color;
+    }
+}
+
+.cleint__size {
+    width: 88.48px;
+    height: 45.44px;
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
