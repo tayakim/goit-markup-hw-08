@@ -617,10 +617,9 @@ body {
   .contacts-header {
     flex-direction: column;
     margin-left: auto;
+    margin-top: 21px;
+    margin-bottom: 21px;
     align-items: baseline;
-  }
-  .contacts-header__item:not(:last-child) {
-    margin-right: 50px;
   }
   .contacts-header__envelope svg {
     width: 16px;
@@ -682,6 +681,10 @@ body {
   .contacts-now:hover, .contacts-now:focus {
     color: #2196F3;
   }
+}
+
+.contacts-now__svg {
+  margin-right: 8px;
 }
 
 .line {
