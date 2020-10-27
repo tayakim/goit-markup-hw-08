@@ -19,21 +19,14 @@ body {
   list-style: none;
 }
 
-.flexin {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  height: 60px;
+.menu-class {
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
-  .flexin {
-    height: 80px;
+  .menu-class {
+    display: flex;
   }
-}
-
-.menu-class {
-  position: relative;
 }
 
 .hidden {
@@ -85,8 +78,8 @@ body {
 
 /* Оформление иконок- соц сетей */
 .social-list {
-  padding-left: 122px;
-  padding-right: 122px;
+  padding-left: calc((100% - 206px) / 2);
+  padding-right: calc((100% - 206px) / 2);
   display: flex;
   justify-content: space-between;
   padding-bottom: 24px;
@@ -511,11 +504,22 @@ body {
   padding: 10px 55px 10px 56px;
 }
 
+.site-nav {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    height: 80px;
+  }
+}
+
 .site-nav__logo {
   width: 134px;
   margin-top: 16px;
   margin-bottom: 16px;
-  margin-right: 276px;
   color: #212121;
   font-family: Raleway;
   font-weight: 700;
@@ -526,21 +530,20 @@ body {
 
 @media screen and (min-width: 768px) {
   .site-nav__logo {
+    margin: auto;
     margin-right: 88px;
+    margin-left: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .site-nav__logo {
+    margin: auto;
+    font-size: 26px;
     margin-right: 93px;
     margin-top: 24px;
     margin-bottom: 25px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .site-nav__logo {
-    font-size: 26px;
+    width: 145px;
   }
 }
 
@@ -704,15 +707,21 @@ body {
   width: 100%;
   height: 0px;
   left: 0px;
-  top: 80px;
+  top: 60px;
   border: 1px solid #ECECEC;
+}
+
+@media screen and (min-width: 768px) {
+  .line {
+    top: 80px;
+  }
 }
 
 .hero {
   background-position: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_mob.jpg");
   background-repeat: no-repeat;
-  min-width: 480px;
+  width: 100%;
   max-width: 1600px;
   display: flex;
   margin-bottom: 60px;
@@ -989,14 +998,11 @@ body {
 }
 
 .team__card {
+  margin-right: 0;
   margin-bottom: 30px;
 }
 
-.team__card:not(:nth-child(2n)) {
-  margin-right: 30px;
-}
-
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .team__card {
     width: calc((100% - 30px) / 2);
   }
@@ -1017,19 +1023,7 @@ body {
 .team__img {
   display: block;
   margin: auto;
-  width: 450px;
-}
-
-@media screen and (min-width: 768px) {
-  .team__img {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team__img {
-    width: 270px;
-  }
+  width: 100%;
 }
 
 .team__content {
@@ -1203,12 +1197,14 @@ body {
 @media screen and (min-width: 768px) {
   .contacts-footer__right {
     margin: auto;
+    width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contacts-footer__right {
     margin-top: 12px;
+    width: 570px;
   }
 }
 
@@ -1317,7 +1313,7 @@ body {
 }
 
 .subscribe__together {
-  width: 570px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1347,7 +1343,8 @@ body {
 }
 
 .subscribe__input-email {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
@@ -1366,8 +1363,8 @@ body {
 
 .subscribe__button {
   cursor: pointer;
+  margin: auto;
   margin-top: 20px;
-  margin-left: 140px;
   width: 200px;
   height: 50px;
   background: #2196F3;
@@ -1403,7 +1400,7 @@ body {
 }
 
 .works {
-  padding-bottom: 0px;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1429,7 +1426,6 @@ body {
 
 .works__card-elem {
   margin: 0 auto;
-  height: 404px;
   margin-bottom: 30px;
 }
 
@@ -1439,7 +1435,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .works__card-elem {
-    width: 450px;
+    width: 100%;
   }
 }
 
@@ -1489,7 +1485,7 @@ body {
 
 .works__img {
   display: block;
-  width: 450px;
+  width: 100%;
   /* margin-bottom: 0; */
 }
 
@@ -1502,7 +1498,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .works__img {
-    width: 370px;
+    width: 100%;
   }
 }
 
@@ -1579,7 +1575,7 @@ body {
 
 .menu-button {
   display: inline-flex;
-  margin: 0;
+  margin-left: auto;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -1595,15 +1591,28 @@ body {
   display: none;
 }
 
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
 .menu-button.is-open .icon-close {
   display: block;
 }
 
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
+.icon-close:hover svg {
+  fill: #2196F3;
+}
+
+.icon-menu:hover svg {
+  fill: #2196F3;
+}
+
 .menu-container {
+  display: none;
   position: absolute;
   width: 480px;
   height: 453px;
@@ -1633,7 +1642,7 @@ body {
   width: 99px;
   height: 155px;
   left: 191px;
-  top: 120px;
+  top: 60px;
   font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.02em;
@@ -1679,7 +1688,7 @@ body {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 275px;
+  margin-top: 215px;
 }
 
 .kontakte-header__item {

@@ -1,6 +1,6 @@
 .menu-button {
     display: inline-flex;
-    margin: 0;
+    margin-left: auto;
     padding: 0;
     border: none;
     background-color: transparent;
@@ -13,16 +13,28 @@
     display: none;
 }
 
-.menu-button.is-open .icon-menu {
-    display: none;
-}
-
 .menu-button.is-open .icon-close {
     display: block;
 }
 
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.menu-container.is-open {
+    display: block;
+}
+
+.icon-close:hover svg {
+    fill: $blue-color;
+}
+
+.icon-menu:hover svg {
+    fill: $blue-color;
+}
+
 .menu-container {
-    // display: none;
+    display: none;
     position: absolute;
     width: 480px;
     height: 453px;
@@ -50,7 +62,7 @@
     width: 99px;
     height: 155px;
     left: 191px;
-    top: 120px;
+    top: 60px;
     font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.02em;
@@ -97,7 +109,7 @@
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 275px;
+    margin-top: 215px;
     // margin-bottom: 21px;
     // &__item:not(:last-child) {
     //     margin-right: 50px;

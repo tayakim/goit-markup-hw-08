@@ -1,8 +1,8 @@
 /* Оформление иконок- соц сетей */
 
 .social-list {
-    padding-left: 122px;
-    padding-right: 122px;
+    padding-left: calc((100% - 206px) / 2);
+    padding-right: calc((100% - 206px) / 2);
     display: flex;
     justify-content: space-between;
     padding-bottom: 24px;

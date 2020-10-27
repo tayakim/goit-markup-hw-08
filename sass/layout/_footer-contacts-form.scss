@@ -6,7 +6,8 @@
     text-transform: uppercase;
     color: #FFFFFF;
     &__together {
-        width: 570px;
+        width: 100%;
+        // width: 570px;
         @media screen and (min-width: 768px) {
             display: contents;
         }
@@ -28,7 +29,8 @@
         border-radius: 4px;
     }
     &__input-email {
-        width: 450px;
+        width: 100%;
+        max-width: 450px;
         font-weight: normal;
         font-size: 16px;
         line-height: 1.25;
@@ -43,8 +45,8 @@
     }
     &__button {
         cursor: pointer;
+        margin: auto;
         margin-top: 20px;
-        margin-left: 140px;
         width: 200px;
         height: 50px;
         background: #2196F3;
