@@ -1,6 +1,6 @@
 .clients {
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
@@ -18,6 +18,9 @@
 .clients__card {
     height: 90px;
     margin-bottom: 30px;
+    &:nth-child(n+5) {
+        margin-bottom: 0px;
+    }
     @media screen and (max-width: 767px) {
         width: calc((100% - 30px) / 2);
         &:not(:nth-child(2n)) {
@@ -28,6 +31,9 @@
         width: calc((100% - 60px) / 3);
         &:not(:nth-child(3n)) {
             margin-right: 30px;
+        }
+        &:nth-child(n+4) {
+            margin-bottom: 0px;
         }
     }
     @media screen and (min-width: 1200px) {
